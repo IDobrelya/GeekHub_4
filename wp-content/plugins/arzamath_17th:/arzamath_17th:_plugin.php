@@ -16,7 +16,8 @@ if(!class_exists('Arzamath'))
     {
         public function __construct()
         {
-            require_once('settings.php');
+            //require_once('settings.php');
+            require_once(sprintf("%s/settings.php", dirname(__FILE__)));
             $arzamath_settings=new Arzamath_Settings();
 
             require_once(sprintf("%s/post-types/post-type_template.php", dirname(__FILE__)));

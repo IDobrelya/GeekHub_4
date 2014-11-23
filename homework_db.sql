@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Ноя 23 2014 г., 18:24
+-- Время создания: Ноя 23 2014 г., 19:25
 -- Версия сервера: 5.5.40
 -- Версия PHP: 5.3.10-1ubuntu3.15
 
@@ -110,7 +110,7 @@ CREATE TABLE IF NOT EXISTS `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=157 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=168 ;
 
 --
 -- Дамп данных таблицы `wp_options`
@@ -213,7 +213,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (94, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
 (95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:13:"array_version";i:3;}', 'yes'),
 (96, 'cron', 'a:5:{i:1416769560;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1416778501;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1416778670;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}i:1416778985;a:1:{s:30:"wp_scheduled_auto_draft_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
-(98, '_transient_random_seed', '53d5329f893f441999b90d961e122927', 'yes'),
+(98, '_transient_random_seed', '98c71a27c605dd966f3672238d6e5694', 'yes'),
 (99, 'auth_key', 'vl_$a[>xb8}57sMY;W#=TE.fM`rk7|ba!N66^>*-4mOyny0WZLDx6S%$i*NvFs17', 'yes'),
 (100, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:2:{i:0;O:8:"stdClass":10:{s:8:"response";s:7:"upgrade";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.0.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.0.1.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.0.1-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.0.1-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.0.1-partial-0.zip";s:8:"rollback";b:0;}s:7:"current";s:5:"4.0.1";s:7:"version";s:5:"4.0.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:3:"4.0";}i:1;O:8:"stdClass":12:{s:8:"response";s:10:"autoupdate";s:8:"download";s:59:"https://downloads.wordpress.org/release/wordpress-4.0.1.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:59:"https://downloads.wordpress.org/release/wordpress-4.0.1.zip";s:10:"no_content";s:70:"https://downloads.wordpress.org/release/wordpress-4.0.1-no-content.zip";s:11:"new_bundled";s:71:"https://downloads.wordpress.org/release/wordpress-4.0.1-new-bundled.zip";s:7:"partial";s:69:"https://downloads.wordpress.org/release/wordpress-4.0.1-partial-0.zip";s:8:"rollback";s:70:"https://downloads.wordpress.org/release/wordpress-4.0.1-rollback-0.zip";}s:7:"current";s:5:"4.0.1";s:7:"version";s:5:"4.0.1";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:3:"4.0";s:12:"notify_email";s:1:"1";s:13:"support_email";s:26:"updatehelp40@wordpress.org";}}s:12:"last_checked";i:1416759429;s:15:"version_checked";s:3:"4.0";s:12:"translations";a:0:{}}', 'yes'),
 (101, 'auth_salt', 'YK.(d/]7;SU,FaOYeZ@;ZN@Z.FHvK7#1#{Z1*H~IH4-h/}WmM1Ao>Fo:=xoSSq8.', 'yes'),
@@ -226,7 +226,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (115, '_site_transient_timeout_browser_55ea08d14575e3ea8ea7642f0881bd6d', '1417296906', 'yes'),
 (116, '_site_transient_browser_55ea08d14575e3ea8ea7642f0881bd6d', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:7:"Firefox";s:7:"version";s:4:"33.0";s:10:"update_url";s:23:"http://www.firefox.com/";s:7:"img_src";s:50:"http://s.wordpress.org/images/browsers/firefox.png";s:11:"img_src_ssl";s:49:"https://wordpress.org/images/browsers/firefox.png";s:15:"current_version";s:2:"16";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (117, 'can_compress_scripts', '0', 'yes'),
-(130, '_transient_timeout_plugin_slugs', '1416846229', 'no'),
+(130, '_transient_timeout_plugin_slugs', '1416847013', 'no'),
 (131, '_transient_plugin_slugs', 'a:3:{i:0;s:19:"akismet/akismet.php";i:1;s:40:"arzamath_17th:/arzamath_17th:_plugin.php";i:2;s:9:"hello.php";}', 'no'),
 (134, 'recently_activated', 'a:1:{s:40:"arzamath_17th:/arzamath_17th:_plugin.php";i:1416759825;}', 'yes'),
 (140, '_site_transient_timeout_theme_roots', '1416761227', 'yes'),
@@ -249,7 +249,11 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (153, '_transient_timeout_feed_mod_b9388c83948825c1edaef0d856b7b109', '1416802642', 'no'),
 (154, '_transient_feed_mod_b9388c83948825c1edaef0d856b7b109', '1416759442', 'no'),
 (155, '_transient_timeout_dash_4077549d03da2e451c8b5f002294ff51', '1416802642', 'no'),
-(156, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2014/11/wordpress-4-0-1/''>WordPress 4.0.1 Security Release</a> <span class="rss-date">November 20, 2014</span><div class="rssSummary">WordPress 4.0.1 is now available. This is a critical security release for all previous versions and we strongly encourage you to update your sites immediately. Sites that support automatic background updates will be updated to WordPress 4.0.1 within the next few hours. If you are still on WordPress 3.9.2, 3.8.4, or 3.7.4, you will be [&hellip;]</div></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-4-1-to-remove-custom-background-and-header-admin-screens''>WPTavern: WordPress 4.1 to Remove Custom Background and Header Admin Screens</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/hierarchy-plugin-enhances-wordpress-as-a-cms''>WPTavern: Hierarchy Plugin Enhances WordPress as a CMS</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-4-0-1-exposes-bad-development-practices-used-in-some-plugins''>WPTavern: WordPress 4.0.1 Exposes Bad Development Practices Used in Some Plugins</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Popular Plugin:</span> <a href=''https://wordpress.org/plugins/woocommerce/'' class=''dashboard-news-plugin-link''>WooCommerce - excelling eCommerce</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=woocommerce&amp;_wpnonce=5860fbdef8&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''WooCommerce - excelling eCommerce''>Install</a>)</span></li></ul></div>', 'no');
+(156, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''https://wordpress.org/news/2014/11/wordpress-4-0-1/''>WordPress 4.0.1 Security Release</a> <span class="rss-date">November 20, 2014</span><div class="rssSummary">WordPress 4.0.1 is now available. This is a critical security release for all previous versions and we strongly encourage you to update your sites immediately. Sites that support automatic background updates will be updated to WordPress 4.0.1 within the next few hours. If you are still on WordPress 3.9.2, 3.8.4, or 3.7.4, you will be [&hellip;]</div></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-4-1-to-remove-custom-background-and-header-admin-screens''>WPTavern: WordPress 4.1 to Remove Custom Background and Header Admin Screens</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/hierarchy-plugin-enhances-wordpress-as-a-cms''>WPTavern: Hierarchy Plugin Enhances WordPress as a CMS</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-4-0-1-exposes-bad-development-practices-used-in-some-plugins''>WPTavern: WordPress 4.0.1 Exposes Bad Development Practices Used in Some Plugins</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Popular Plugin:</span> <a href=''https://wordpress.org/plugins/woocommerce/'' class=''dashboard-news-plugin-link''>WooCommerce - excelling eCommerce</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=woocommerce&amp;_wpnonce=5860fbdef8&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''WooCommerce - excelling eCommerce''>Install</a>)</span></li></ul></div>', 'no'),
+(160, '_site_transient_timeout_browser_c0f6dc320d407ac0aa1597326086765b', '1417365410', 'yes'),
+(161, '_site_transient_browser_c0f6dc320d407ac0aa1597326086765b', 'a:9:{s:8:"platform";s:5:"Linux";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"38.0.2125.122";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
+(162, 'setting_a', 'sdfsfsf', 'yes'),
+(163, 'setting_b', '', 'yes');
 
 -- --------------------------------------------------------
 
@@ -265,7 +269,7 @@ CREATE TABLE IF NOT EXISTS `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Дамп данных таблицы `wp_postmeta`
@@ -282,7 +286,12 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (8, 27, 'meta_a', ''),
 (9, 27, 'meta_b', ''),
 (10, 27, 'meta_c', ''),
-(11, 27, '_edit_lock', '1416759677:1');
+(11, 27, '_edit_lock', '1416759677:1'),
+(12, 28, '_edit_last', '1'),
+(13, 28, '_edit_lock', '1416763061:1'),
+(14, 28, 'meta_a', ''),
+(15, 28, 'meta_b', ''),
+(16, 28, 'meta_c', '');
 
 -- --------------------------------------------------------
 
@@ -319,7 +328,7 @@ CREATE TABLE IF NOT EXISTS `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Дамп данных таблицы `wp_posts`
@@ -352,7 +361,10 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (24, 1, '2014-11-23 16:18:20', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-11-23 16:18:20', '0000-00-00 00:00:00', '', 0, 'http://homework.local/?post_type=post-type-template&p=24', 0, 'post-type-template', '', 0),
 (25, 1, '2014-11-23 16:19:57', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-11-23 16:19:57', '0000-00-00 00:00:00', '', 0, 'http://homework.local/?post_type=post-type-template&p=25', 0, 'post-type-template', '', 0),
 (26, 1, '2014-11-23 16:22:51', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-11-23 16:22:51', '0000-00-00 00:00:00', '', 0, 'http://homework.local/?post_type=post-type-template&p=26', 0, 'post-type-template', '', 0),
-(27, 1, '2014-11-23 16:23:31', '2014-11-23 16:23:31', '', '', '', 'publish', 'closed', 'closed', '', '27', '', '', '2014-11-23 16:23:31', '2014-11-23 16:23:31', '', 0, 'http://homework.local/?post_type=post-type-template&#038;p=27', 0, 'post-type-template', '', 0);
+(27, 1, '2014-11-23 16:23:31', '2014-11-23 16:23:31', '', '', '', 'publish', 'closed', 'closed', '', '27', '', '', '2014-11-23 16:23:31', '2014-11-23 16:23:31', '', 0, 'http://homework.local/?post_type=post-type-template&#038;p=27', 0, 'post-type-template', '', 0),
+(28, 1, '2014-11-23 16:26:36', '2014-11-23 16:26:36', 'add test post', 'test post', '', 'publish', 'closed', 'closed', '', 'test-post', '', '', '2014-11-23 16:26:36', '2014-11-23 16:26:36', '', 0, 'http://homework.local/?post_type=post-type-template&#038;p=28', 0, 'post-type-template', '', 0),
+(29, 1, '2014-11-23 17:22:40', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-11-23 17:22:40', '0000-00-00 00:00:00', '', 0, 'http://homework.local/?post_type=post-type-template&p=29', 0, 'post-type-template', '', 0),
+(30, 1, '2014-11-23 17:23:13', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-11-23 17:23:13', '0000-00-00 00:00:00', '', 0, 'http://homework.local/?post_type=post-type-template&p=30', 0, 'post-type-template', '', 0);
 
 -- --------------------------------------------------------
 
@@ -457,7 +469,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', 'wp350_media,wp360_revisions,wp360_locks,wp390_widgets'),
 (13, 1, 'show_welcome_panel', '0'),
-(14, 1, 'session_tokens', 'a:2:{s:64:"ca1fdcb5a217a844c166585798e1f3a34283dd321d1fc785318d2f57ffcba6c6";i:1416864902;s:64:"a1c2672af939a377ac617d2d6a3dd8403efa146e06060e89ad4c56fbbee3332c";i:1416932235;}'),
+(14, 1, 'session_tokens', 'a:4:{s:64:"ca1fdcb5a217a844c166585798e1f3a34283dd321d1fc785318d2f57ffcba6c6";i:1416864902;s:64:"a1c2672af939a377ac617d2d6a3dd8403efa146e06060e89ad4c56fbbee3332c";i:1416932235;s:64:"f4e822fcf3d34ba69ca5cb351554bcdf2852677f49bacbcc0d55550ae5fd505a";i:1416933409;s:64:"f634888134891325fecc22f7780302904996a31557a640ba4a3f9267c2a58b42";i:1416935512;}'),
 (15, 1, 'wp_user-settings', 'editor=html&libraryContent=browse'),
 (16, 1, 'wp_user-settings-time', '1416692101'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '3'),
