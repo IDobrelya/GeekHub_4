@@ -4,8 +4,8 @@ if(!class_exists('Post_Type_Template'))
     
     class Post_Type_Template
     {
-        const POST_TYPE	= "post-type-template";
-        private $_meta	= array(
+        const POST_TYPE = "post-type-template";   // назва нашого поста який буде відображатись на адмін панелі, і в інших випадках
+        private $_meta  = array(
             'meta_a',
             'meta_b',
             'meta_c',
@@ -35,12 +35,12 @@ if(!class_exists('Post_Type_Template'))
                     'has_archive' => true,
                     'description' => __("This is a sample post type meant only to illustrate a preferred structure of plugin development"),
                     'supports' => array(
-                       'title', 'editor', 'thumbnail'
+                        'title', 'editor', 'thumbnail'
                     ),
                 )
             );
         }
-        
+       
         public function save_post($post_id)
         {
 
@@ -59,28 +59,31 @@ if(!class_exists('Post_Type_Template'))
             else
             {
                 return;
-            }  
-
+            } 
         } 
         public function admin_init()
         {
 
             add_action('add_meta_boxes', array(&$this, 'add_meta_boxes'));
         } 
+        
         public function add_meta_boxes()
         {
 
             add_meta_box(
-                sprintf('arzamath_template_%s_section', self::POST_TYPE),
-                sprintf('%s Information', ucwords(str_replace("_", " ", self::POST_TYPE))),
+                
+            'arzamath_settings_group',
+                
+            'Мультиселект',
                 array(&$this, 'add_inner_meta_boxes'),
                 self::POST_TYPE
             );
         } 
+        
         public function add_inner_meta_boxes($post)
         {
 
-            //include(sprintf("%s/template/%s_metabox.php", dirname(__FILE__), self::POST_TYPE));
+            include(sprintf("%s/../template/%s_metabox.php", dirname(__FILE__), self::POST_TYPE));
         } 
     } 
-}
+} 
